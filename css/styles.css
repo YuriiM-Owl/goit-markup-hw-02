@@ -1,0 +1,21 @@
+:root {
+  /** Fonts **/
+  --f-global-font: 'Roboto', sans-serif;
+  --f-logo-font: 'Raleway', sans-serif;
+
+  /** Colors **/
+  /* elements' styles */
+  --c-primary: #4d5ae5;
+  --c-effects: #404bbf;
+  /* text styles */
+  --c-text-main: #434455;
+  --c-text-subtle: #8e8f99;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--f-global-font);
+}
