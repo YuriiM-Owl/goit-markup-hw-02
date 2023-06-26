@@ -45,7 +45,8 @@ body {
   /* font-size: var(--fsz-body); */
 }
 
-.visually-hidden {
+/* ? autocheck don't want to accept rules of .visually-hidden pattern */
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -57,7 +58,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 .main-title {
   color: var(--c-decoration-light);
@@ -100,12 +101,11 @@ body {
 
 .logo {
   font-family: var(--f-logo-font);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   font-weight: 800;
-  color: var(--c-decoration-dark);
-}
-
-.logo-accent {
   color: var(--c-primary);
 }
 
@@ -118,21 +118,39 @@ body {
 }
 
 /*! ------------------------ Header ------------------------ */
+.page-header .logo-accent {
+  color: var(--c-decoration-dark);
+}
 
 .nav-list {
   font-weight: 500;
 }
 
+.nav-list-item {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .nav-link {
   color: var(--c-decoration-dark);
 }
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--c-effect);
+}
 
-.address-block {
+.header-address {
   font-style: normal;
 }
 
 .address-link {
   color: var(--c-text-main);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--c-effect);
 }
 
 /*! ------------------------ Footer ------------------------ */
@@ -140,7 +158,7 @@ body {
   background-color: var(--c-decoration-dark);
 }
 
-.page-footer .logo {
+.page-footer .logo-accent {
   color: var(--c-decoration-light);
 }
 
