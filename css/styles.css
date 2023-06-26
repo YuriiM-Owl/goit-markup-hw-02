@@ -26,7 +26,7 @@
   --c-primary: #4d5ae5; /* IRIS */
   --c-effect: #404bbf; /* OCEAN */
   --c-decoration-dark: #2e2f42; /* NAVY BLUE */
-  --c-decoration-light: #f4f4fd; /*  */
+  --c-decoration-light: #f4f4fd; /* CLOUD */
   --c-modal-bg: #fcfcfc; /* DAIRY */
   --c-modal-ovl: rgba(46, 47, 66, 0.4); /* NAVY BLUE modal */
   --c-hero-bg: rgba(46, 47, 66, 0.698); /* GREY */
@@ -61,10 +61,11 @@ body {
 } */
 
 .main-title {
-  color: var(--c-decoration-light);
+  color: var(--c-text-alt);
   font-size: var(--fsz-main-title);
   line-height: 1.07;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 .section-title,
@@ -113,6 +114,7 @@ body {
   cursor: pointer;
   font-family: var(--f-global-font);
   /* font-size: var(--fsz-button); */
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
@@ -177,11 +179,32 @@ body {
   color: var(--c-text-alt);
   background-color: var(--c-primary);
 }
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--c-effect);
+}
+
+/** ------------------------ About Us ------------------------ */
+.about .local-title {
+  text-transform: capitalize;
+}
 
 /** ------------------------ Our Team ------------------------ */
+.team {
+  background-color: var(--c-decoration-light);
+}
+
+.team-list {
+  background-color: var(--c-background);
+}
+
 .team .local-title,
 .team .text {
   text-align: center;
+}
+
+.team .local-title {
+  text-transform: capitalize;
 }
 
 /*! ------------------------ Portfolio Main ------------------------ */
