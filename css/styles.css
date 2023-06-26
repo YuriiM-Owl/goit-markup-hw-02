@@ -1,7 +1,8 @@
 :root {
-  /** Fonts **/
+  /** ------------------------ Fonts ------------------------ */
   --f-global-font: 'Roboto', sans-serif;
   --f-logo-font: 'Raleway', sans-serif;
+
   /* font size */
   --fsz-main-title: 56px;
   --fsz-section-title: 36px;
@@ -12,77 +13,162 @@
   --fsz-button: 16px;
   --fsz-link: 12px;
 
-  /** Colors **/
-  --c-background: #ffffff;
+  /** ------------------------ Colors ------------------------ */
+
+  --c-background: #ffffff; /* WHITE */
+
   /* text styles */
-  --c-text-main: #434455;
-  --c-text-subtle: #8e8f99;
+  --c-text-main: #434455 /* SLATE */;
+  --c-text-subtle: #8e8f99; /* LIGHT SLATE */
+  --c-text-alt: #ffffff; /* WHITE */
+
   /* elements' styles */
-  --c-primary: #4d5ae5;
-  --c-effect: #404bbf;
-  --c-decoration-dark: #2e2f42;
-  --c-decoration-light: #f4f4fd;
-  --c-modal-bg: #fcfcfc;
-  --c-modal-ovl: #2e2f4266;
-  --c-hero-bg: #2e2f42b2;
+  --c-primary: #4d5ae5; /* IRIS */
+  --c-effect: #404bbf; /* OCEAN */
+  --c-decoration-dark: #2e2f42; /* NAVY BLUE */
+  --c-decoration-light: #f4f4fd; /*  */
+  --c-modal-bg: #fcfcfc; /* DAIRY */
+  --c-modal-ovl: rgba(46, 47, 66, 0.4); /* NAVY BLUE modal */
+  --c-hero-bg: rgba(46, 47, 66, 0.698); /* GREY */
+
   /* effects */
-  --c-success: #31d0aa;
-  --c-accent: #e7e9fc;
+  --c-success: #31d0aa; /* GREEN */
+  --c-accent: #e7e9fc; /* CORNFLOWER */
 }
+
+/** ---------------------- Global styles ---------------------- */
 
 body {
   background-color: var(--c-background);
   font-family: var(--f-global-font);
   color: var(--c-text-main);
-  font-size: var(--fsz-body);
+  /* font-size: var(--fsz-body); */
 }
 
-h1 {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-title {
   color: var(--c-decoration-light);
   font-size: var(--fsz-main-title);
+  line-height: 1.07;
+  letter-spacing: 0.07em;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+.section-title,
+.local-title {
   color: var(--c-decoration-dark);
 }
 
-ul,
-ol {
+.section-title {
+  font-size: var(--fsz-section-title);
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.local-title {
+  font-size: var(--fsz-local-title);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
   list-style-type: none;
 }
 
-address {
-  font-style: normal;
-}
-
-a {
-  text-decoration: none;
-  color: var(--c-text-main);
-}
-
-.e-logo {
+.logo {
   font-family: var(--f-logo-font);
   text-transform: uppercase;
   font-weight: 800;
+  color: var(--c-decoration-dark);
 }
 
-.e-logo-accent {
+.logo-accent {
   color: var(--c-primary);
 }
 
-.c-banner {
+.btn {
+  cursor: pointer;
+  font-family: var(--f-global-font);
+  /* font-size: var(--fsz-button); */
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+/*! ------------------------ Header ------------------------ */
+
+.nav-list {
+  font-weight: 500;
+}
+
+.nav-link {
+  color: var(--c-decoration-dark);
+}
+
+.address-block {
+  font-style: normal;
+}
+
+.address-link {
+  color: var(--c-text-main);
+}
+
+/*! ------------------------ Footer ------------------------ */
+.page-footer {
   background-color: var(--c-decoration-dark);
 }
 
-.e-btn {
-  font-size: var(--fsz-button);
+.page-footer .logo {
+  color: var(--c-decoration-light);
 }
 
-.e-btn--order {
-  color: var(--c-background);
+.page-footer .text {
+  color: var(--c-decoration-light);
+}
+
+/*! ------------------------ Homepage Main ------------------------ */
+/** ------------------------ Hero ------------------------ */
+
+.hero {
+  background-color: var(--c-decoration-dark);
+}
+
+.order-btn {
+  color: var(--c-text-alt);
   background-color: var(--c-primary);
+}
+
+/** ------------------------ Our Team ------------------------ */
+.team .local-title,
+.team .text {
+  text-align: center;
+}
+
+/*! ------------------------ Portfolio Main ------------------------ */
+/** ------------------------ Filter Btns------------------------ */
+.portfolio-btn {
+  color: var(--c-primary);
+  background-color: var(--c-decoration-light);
 }
