@@ -199,3 +199,8 @@ body {
   color: var(--c-primary);
   background-color: var(--c-decoration-light);
 }
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--c-text-alt);
+  background-color: var(--c-effect);
+}
