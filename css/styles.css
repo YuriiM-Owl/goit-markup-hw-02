@@ -45,21 +45,6 @@ body {
   /* font-size: var(--fsz-body); */
 }
 
-/* ? autocheck don't want to accept rules of .visually-hidden pattern */
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
-
 .main-title {
   color: var(--c-text-alt);
   font-size: var(--fsz-main-title);
@@ -71,6 +56,7 @@ body {
 .section-title,
 .local-title {
   color: var(--c-decoration-dark);
+  text-transform: capitalize;
 }
 
 .section-title {
@@ -185,9 +171,9 @@ body {
 }
 
 /** ------------------------ About Us ------------------------ */
-.about .local-title {
+/* .about .local-title {
   text-transform: capitalize;
-}
+} */
 
 /** ------------------------ Our Team ------------------------ */
 .team {
@@ -203,9 +189,9 @@ body {
   text-align: center;
 }
 
-.team .local-title {
+/* .team .local-title {
   text-transform: capitalize;
-}
+} */
 
 /*! ------------------------ Portfolio Main ------------------------ */
 /** ------------------------ Filter Btns------------------------ */
